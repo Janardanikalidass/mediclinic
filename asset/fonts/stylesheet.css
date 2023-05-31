@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-Thin.eot');
+    src: url('Mont-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Mont-Thin.woff2') format('woff2'),
+        url('Mont-Thin.woff') format('woff'),
+        url('Mont-Thin.ttf') format('truetype'),
+        url('Mont-Thin.svg#Mont-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
