@@ -334,6 +334,7 @@ ul.sub-fil-ul li.sub-fil-active{
 .immu-head {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 23px;
 }
 .immu-head p {
     font-weight: 600;
@@ -350,4 +351,21 @@ ul.sub-fil-ul li.sub-fil-active{
     color: #fff;
     border-radius: 0px 5px 5px 0;
     display: none;
+}
+.right-section-filter .top-wraper {
+    width: calc(20% - 27px);
+}
+.right-section-filter .top-offer-head {
+    flex-wrap: wrap;
+}
+.right-section-filter .top-wraper:nth-child(n){
+    margin-right: 33px !important;
+}
+.filter-sel {
+    width: 240px;
+    height: 46px;
+}
+
+.filter-sel select {
+    height: 100%;
 }

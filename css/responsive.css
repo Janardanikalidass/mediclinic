@@ -8,6 +8,11 @@
 @media screen and (max-width:1799px) {
 .top-wraper .zin-para {min-height: 87px;}
 }
+@media screen and (max-width:1600px) {
+.right-section-filter .top-wraper {
+    width: calc(25% - 33px);
+}
+}
 @media screen and (max-width:1400px) {
 
 .logo {width: 200px;height: 41px;}
@@ -18,7 +23,9 @@
 .top-offer-head{flex-wrap: wrap;}
 .top-wraper:nth-child(5n) {margin-right: 33px;}
 .top-wraper:nth-child(4n) {margin-right: 0;}
-
+.right-section-filter .top-wraper {
+    width: calc(33% - 31px);
+}
 }
 @media screen and (max-width:1399px) {
 .doc-para {
@@ -40,6 +47,9 @@
 .top-wraper:nth-child(4n) {margin-right: 33px;}
 .top-wraper:nth-child(3n) {margin-right: 0;}
 .top-wraper .zin-para {min-height: 46px;}
+.right-section-filter .top-wraper {
+    width: calc(50% - 33px);
+}
 }
 
 @media screen and (max-width:991px) {
@@ -97,7 +107,10 @@
 .popular-doctor {
     margin: 22px 0 70px;
 }
-  
+.right-section-filter .top-wraper{width: 100%;}
+.right-section-filter .top-wraper:nth-child(n){
+    margin-right: 0 !important;
+}
 }
 @media screen and (max-width:500px) {
 .foot-1,.foot-6{width: 100%;}
@@ -107,6 +120,7 @@
 .immu-head{
     flex-direction: column;
 }
+.immu-head p{margin-bottom: 10px;}
 }
 @media screen and (max-width:424px) {
 .container{min-width: 300px;width: 300px;}
