@@ -1,0 +1,213 @@
+/* http://www.menucool.com/jquery-slider */
+
+#thumbnail-slider ul li{
+    width: 86px !important;
+    height: 86px !important;
+}
+#ninja-slider{
+    width: calc(100% - 140px);
+}
+#ninja-slider .ns-img{
+    background-color: #fff;
+}
+#ninja-slider ul {
+    height: 405px !important;
+    /* border: 1px solid #ECEEED; */
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+#thumbnail-slider div.inner{
+    background-color: #fff;
+}
+@media only screen and (max-width:991px){
+    #ninja-slider ul{
+        height: 400px !important;
+    }
+    #thumbnail-slider{
+        height: 400px !important;
+    }
+  
+ 
+}
+@media only screen and (max-width:514px){
+    #thumbnail-slider ul li{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    #thumbnail-slider{
+        height: 200px !important;
+    }
+    #ninja-slider ul{
+        height: 200px !important;
+    }
+    #ninja-slider {
+        width: calc(100% - 90px);}
+        #thumbnail-slider div.inner{
+            padding-inline: 15px;
+            padding-right: 15px !important;
+        }
+        #thumbnail-slider-prev::before, #thumbnail-slider-next::before{
+            height: 15px !important;
+            width: 11px !important;
+        }
+        #thumbnail-slider-prev, #thumbnail-slider-next{
+            width: 100% !important;
+        }
+        #thumbnail-slider{
+            padding-block: 12px !important;
+        }
+
+}
+.icon-thumbnail{
+    top: 13px;
+    position: absolute;
+    right: 13px;
+    z-index: 33;
+}
+
+
+/*---------------------------- Thumbnails ----------------------------*/
+#thumbnail-slider {    
+    height:400px; 
+    display:inline-block;
+    padding:0px 0; /*Increse its value if want to move the arrows out of the div.inner */
+    position:relative;
+    -webkit-user-select: none;
+    user-select:none;
+    padding-block: 35px;
+}
+
+#thumbnail-slider div.inner {
+    border-radius:3px;
+    background-color:#fff;
+    padding-right:32px;
+
+    /*the followings should not be changed */    
+    height:100%;  box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+    margin:0;
+}
+ 
+#thumbnail-slider div.inner ul {    
+    /*the followings should not be changed */
+    position:relative;
+    left:0; top:0;
+    list-style:none;
+    font-size:0;
+    padding:0;
+    margin:0;
+    float:left!important;
+    width:auto!important;
+    height:auto!important;
+}
+
+#thumbnail-slider ul li {
+    opacity:1;
+    display:block;
+    border: 1px solid #ECEEED;
+    border-radius: 5px;
+    margin:9px 0; /* Spacing between thumbs*/
+
+    transition:all 0.5s;
+
+    text-align:center;
+    padding:0;
+    position:relative;
+    list-style:none;
+    box-sizing:content-box;
+    backface-visibility:hidden;
+
+}
+
+#thumbnail-slider ul li.active {
+    border-color:#006230;    
+	-webkit-filter: initial;
+	filter: initial;
+}
+#thumbnail-slider li:hover {
+    border-color:#ECEEED;   
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+#thumbnail-slider .thumb {
+    width:100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    display:block;
+    position:absolute;
+    font-size:0;
+}
+
+/* --------- navigation controls ------- */   
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */  
+
+#thumbnail-slider-pause-play {display:none;} /*.pause*/
+
+#thumbnail-slider-prev, #thumbnail-slider-next
+{
+    position: absolute;
+    /* background-color:rgba(0,0,0,0.4); */
+    width: calc(100% - 34px);
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    margin:0;
+    color:white;
+    z-index:10;
+    cursor:pointer;
+    transition:opacity 0.6s;
+    *background-color:#ccc;/*IE7 hack*/
+    backface-visibility:hidden;
+}
+
+#thumbnail-slider-prev {
+    top:-10px;
+}
+
+#thumbnail-slider-next {
+    bottom:-9px;
+}
+#thumbnail-slider-next.disabled, #thumbnail-slider-prev.disabled {
+    opacity:0.1;
+    cursor:default;
+}
+
+
+/* arrows */
+#thumbnail-slider-prev::before, #thumbnail-slider-next::before {
+    position:absolute;
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    margin-left:-10px;
+   /* background-image: url(../images/Vector\ \(5\).png); */
+   background: url("../images/down-green-arrow.png");
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#thumbnail-slider-prev::before {
+    top:4px;
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg); 
+    margin-left: -10px;
+}
+
+#thumbnail-slider-next::before {
+    bottom:8px;
+    /* -ms-transform:rotate(135deg);
+    -webkit-transform:rotate(-135deg);
+    transform: rotate(-135deg); */
+}
+
+/* @media screen and (max-width:576px) {
+#thumbnail-slider ul li {
+    width: 60px !important;
+    height: 60px !important;
+}} */

@@ -6,11 +6,14 @@
 .medxinplate .font-20{font-size: 20px;line-height: 26px;}
 .medxinplate .font-22{font-size: 22px;line-height: 28px;}
 .medxinplate .font-24{font-size: 24px;line-height: 31px;}
+.font-32{font-size: 32px;
+    line-height: 26px;}
 
 
 @media screen and (max-width:1199px) {
     .medxinplate .font-16,.medxinplate .font-15 {font-size: 14px;line-height: 20px;}
     .medxinplate .font-22{font-size: 18px;line-height: 25px;}
-
+    .font-32{font-size: 28px;
+        line-height: 26px;}
 }
 @media screen and (max-width:991px) {.medxinplate .font-18{font-size: 16px;line-height: 23px;}}

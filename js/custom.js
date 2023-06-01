@@ -5,8 +5,11 @@ $(document).ready(function(){
         $(".nav-wrapper").toggleClass('open')
       });
 
-    $('filter-here').click(function(){
-      $(".leftsection-filter").toggleClass('open')
+    $('.filter-here').click(function(){
+      $(".leftsection-filter").toggleClass('open');
+    
     })
-      
+    $(".cross-icon ").click(function(){
+      $(".leftsection-filter").removeClass('open')
+    })
 })
