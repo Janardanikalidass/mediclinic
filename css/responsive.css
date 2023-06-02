@@ -112,6 +112,18 @@
 .doc-head,.doc-para {min-height: unset; }
 .top-wraper .zin-para {min-height: 69px;}
 .parm-para{    min-height: 78px;}
+.items-cart-wrapper {
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+}
+.cart-quan {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cart-quan-sec {
+    width: 100%;
+    margin-left: 0;
+}
 }
 
 @media screen and (max-width:576px) {
@@ -136,6 +148,9 @@
 @media screen and (max-width:575px) {
     .medxinplate .container{min-width: 390px; width: 390px;}
     .parm-para{ min-height: auto;}
+    .cart-quan {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:500px) {
 .foot-1,.foot-6{width: 100%;}
@@ -153,5 +168,7 @@
 .phr-content { margin-top: 15px;}
 .privacy-img img:first-child {padding-left: 0;}
 .privacy-img {margin-top: 10px;}
-    
+.cart-quan-sec .qual-wrap {
+    width: 130px;
+}
 }
