@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/font.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/css/dd.min.css" />
+    <script src="dist/js/dd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/js/dd.min.js"></script>
+
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                         <div class="cart-img"><img src="./asset/images/cart.png" alt="cart img"></div>
                         <div class="cart-item font-12">9<span>+</span></div>
                     </div>
-                    <div class="login">
+                    <div class="login" data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="user-logo"> <img src="./asset/images/userlogo.png" alt="userlogo"></div>
                         <p class="font-16">Login</p>
                         <img src="./asset/images/downarrow.png" alt="downarrow">
@@ -390,11 +396,163 @@
         </div>
          </div>
         </footer>
+
+
+        <!-- login  modal  -->
+        <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog login-modal">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body ">
+        <h3 class="font-28 login-head">Login in to Mediclinic</h3>
+        <p class="login-sub font-16">Please enter your credentials to proceed</p>
+        <form action="">
+            <div class="form-group">
+                <label for="" class="regs-label">Mobile Number</label>
+                <div class="country-number">
+                    <div class="custom-contry-select">
+                        <select class="" name="tech" is="ms-dropdown">
+                            <option data-image="./asset/images/india.png" value="" selected></option>
+                            <option data-image="./asset/images/us.png" value="" ></option>
+                            <option data-image="./asset/images/uk.png" value=""></option>
+                            <option data-image="./asset/images/brazil.png" value=""></option>
+                            <option data-image="./asset/images/canada.png" value=""></option>
+                            <option data-image="./asset/images/singapore.png" value=""></option>
+                        </select>
+                       </div> 
+                       <span class="country-code">+91</span>
+                    <input type="text" class="form-control">
+                </div>
+
+               
+            </div>
+            <button id="popup-button" type="button" class="btn continue-btn font-16" data-bs-toggle="modal" data-bs-target="#verificationmodal" data-bs-dismiss="modal" >Continue</button>
+            <div class="login-with font-16">Or Login With</div>
+            <div class="google-fb">
+                <img src="./asset/images/google.png" alt="">
+                <img src="./asset/images/fb.png" alt="">
+            </div>
+            <p class="new-to-med font-16">New to Mediclinic?<button  data-bs-toggle="modal" data-bs-target="#registermodal" data-bs-dismiss="modal" type="button" class="btn"> Register</button> </p>
+        </form>
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+
+<!-- verification modal  -->
+
+
+  <div class="modal" id="verificationmodal">
+    <div class="modal-dialog login-modal verification">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body ">
+        <h3 class="font-28 login-head">Verification Code</h3>
+        <p class="login-sub font-16">6 Digit Verification Code Sent to  96584 854615 <span class="pen"  data-bs-toggle="modal" data-bs-target="#myModal" data-bs-dismiss="modal"><img src="./asset/images/pen.png" alt=""></span> </p>
+        <div class="otp-wrapper">
+            <div id="otp" class="otp-class d-flex justify-content-center">
+                <input type="text" id="first" maxlength="1" value="6" class="form-control"/>
+                <input type="text" id="second" maxlength="1" value="3" class="form-control" />
+                <input type="text" id="third" maxlength="1" value="7" class="form-control"/>
+                <input type="text" id="fourth" maxlength="1" class="form-control"/>
+                <input type="text" id="fifth" maxlength="1" class="form-control"/>
+                <input type="text" id="sixth" maxlength="1" class="form-control" />
+            </div>
+            <p class="minutes">00:30</p>
+        </div>
+        
+        <p class="new-to-med font-16">Didn’t receive the code?  <span> Re-send</span> </p>
+        <button id="popup-button" type="button" class="btn continue-btn font-16" data-bs-dismiss="modal" >Submit</button>
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+
+ <!-- Register modal  -->
+
+  <!-- The Modal -->
+<div class="modal" id="registermodal">
+    <div class="modal-dialog login-modal registermodal1">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body ">
+        <h3 class="font-28 login-head">Register to Mediclinic</h3>
+        <p class="login-sub font-16">Please enter your credentials to proceed</p>
+        <form action="">
+            <div class="form-group">
+                <label for="" class="regs-label font-16">First Name</label>
+                <input type="text" class="form-control name-input font-18" value="Ajith">
+            </div>
+            <div class="form-group">
+                <label for="" class="regs-label font-16">Last Name </label>
+                <input type="text" class="form-control name-input font-18" value="Kuma">
+            </div>
+            <div class="form-group">
+                <label for="" class="regs-label font-16">Date of Birth </label>
+                <div id="datepicker" 
+                class="input-group date" 
+                data-date-format="mm-dd-yyyy">
+               <input class="form-control font-18" 
+                      type="text" readonly />
+               <span class="input-group-addon">
+                   <i class="glyphicon glyphicon-calendar"></i>
+               </span>
+           </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="regs-label font-16">Mobile Number </label>
+                <input type="text" class="form-control name-input font-18" value="">
+            </div>
+            <div class="form-group">
+                <label for="" class="regs-label font-16">Email Address </label>
+                <input type="text" class="form-control name-input font-18" value="">
+            </div>
+            <div class="check-box">
+                <label class="form-check-label termandcon">
+                    <input class="form-check-input font-18" type="checkbox" name="remember">I agree with <span>Terms & Conditions</span>
+                  </label>
+               
+               </div>
+            <button id="popup-button" type="button" class="btn continue-btn font-16" data-bs-toggle="modal" data-bs-target="#verificationmodal" data-bs-dismiss="modal" >Continue</button>
+           
+            <p class="new-to-med font-16">I have an Account? <button data-bs-toggle="modal" data-bs-target="#myModal" data-bs-dismiss="modal" type="button" class="btn"> Login</button> </p>
+        </form>
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"  crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </body>
 
 </html>

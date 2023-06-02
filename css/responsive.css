@@ -102,6 +102,7 @@
     width: 100%;
 }
 .filter-here,.cross-icon {display: block;}
+.parm-para{    min-height: 101px;}
 
 }
 
@@ -110,10 +111,11 @@
 .top-offers {margin: 40px 0;padding: 30px 0;}
 .doc-head,.doc-para {min-height: unset; }
 .top-wraper .zin-para {min-height: 69px;}
+.parm-para{    min-height: 78px;}
 }
 
 @media screen and (max-width:576px) {
-.container{min-width: 390px; width: 390px;}
+
 .left-wrapper { flex-wrap: wrap;justify-content: space-between; }  
 .search-wrapper { order: 3;width: 100%; margin: 10px 0 0 0; }
 .top-wraper {width: 100%;}
@@ -131,6 +133,10 @@
     min-height: auto;
 }
 }
+@media screen and (max-width:575px) {
+    .medxinplate .container{min-width: 390px; width: 390px;}
+    .parm-para{ min-height: auto;}
+}
 @media screen and (max-width:500px) {
 .foot-1,.foot-6{width: 100%;}
 .foot-logo {width: 160px;}
@@ -142,7 +148,7 @@
 .immu-head p{margin-bottom: 10px;}
 }
 @media screen and (max-width:424px) {
-.container{min-width: 300px;width: 300px;}
+    .medxinplate .container{min-width: 300px;width: 300px;}
 .cat-row {flex-direction: column;align-items: center;}
 .phr-content { margin-top: 15px;}
 .privacy-img img:first-child {padding-left: 0;}

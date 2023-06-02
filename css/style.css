@@ -108,7 +108,7 @@ header{width: 100%;float: left;display: block;}
 .cart-img {width: 24px;height: 24px;}
 .cart-img img {width: 100%;height: 100%;object-fit: cover;}
 .cart-item {position: absolute;top: -2px;right: -9px;background: #207785;color: #fff;padding: 3px 4px;border-radius: 50%;}
-.login {display: flex;align-items: center;}
+.login {display: flex;align-items: center;cursor: pointer;}
 .login p {margin-bottom: 0;padding: 0px 6px 0px 10px;font-weight: 600;}
 .left-wrapper {width: 50%;display: flex;align-items: center;}
 .nav-wrapper {width: 50%;display: flex;padding-left: 30px;justify-content: space-between;align-items: center;}
@@ -445,14 +445,16 @@ ul.sub-fil-ul li.sub-fil-active{
 }
 
 .pack-size span {
-    padding: 7px 24px;
-    border: 1px solid #4FB861;
-    border-radius: 20px;
+    padding: 9px 24px;
+    border: 1.2px solid #747E80;
+    border-radius: 300px;
     margin-right: 10px;
-    width: 110px;
+    width: 115px;
     margin-bottom: 10px;
 }
-
+.pack-size span.active{
+    border: 1px solid #4FB861;
+}
 .qual-wrap {
     border: 1.6px solid #4FB861;
     border-radius: 5px;
@@ -561,12 +563,215 @@ ul.sub-fil-ul li.sub-fil-active{
     font-weight: 600;
     margin-bottom: 30px;
 }
-.parm-para {    
-    padding: 16px 0;
+.parm-para {        
+    padding-top: 16px;
     font-weight: 600;
     min-height: 90px;
 }
 .parm-inner:hover {
     border: 1px solid #4FB861;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.country-number {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4FB861;
+}
+.custom-country .custom-contry-select .ms-dd.ms-pr {
+    border: 0;
+    background: transparent;
+    height: 100%;
+}
+.custom-country .custom-contry-select {
+    height: 100%;
+}
+.custom-country .custom-contry-select .ms-dd .ms-dd-arrow.ms-dd-pointer-down, .custom-country .custom-contry-select .ms-dd .ms-dd-arrow.ms-dd-pointer-up {
+    background: no-repeat;
+}
+.custom-country .custom-contry-select .ms-dd .ms-list-option.option-selected, .custom-country .custom-contry-select .ms-dd .ms-optgroup ul .ms-list-option.option-selected {
+    display: flex !important;
+}
+.custom-contry-select .ms-dd.ms-pr {
+    width: 100%;
+    background: #FFFFFF;
+    /* border: 1px solid #B5B5B5;
+    border-radius: 6px; */
+}
+.custom-contry-select .ms-dd .ms-list-option.option-selected, .custom-contry-select .ms-dd .ms-optgroup ul .ms-list-option.option-selected {
+    background: transparent;
+    color: #161614;
+    font-size: var(--font18);
+    font-weight: 400;
+    font-family: 'Source Sans Pro';
+    height: 100%;
+}
+.custom-contry-select .ms-dd .ms-dd-header {
+    border: none;
+    font-size: var(--font18);
+    height: 100%;
+}
+.custom-contry-select .ms-dd .ms-list-option, .custom-contry-select .ms-dd .ms-optgroup ul .ms-list-option {border-bottom: 0 !important;}
+.custom-contry-select .ms-dd .ms-list-option:hover, .custom-contry-select .ms-dd .ms-optgroup ul .ms-list-option:hover {
+    background: #FFFDF5;
+}
+.custom-contry-select .ms-dd .ms-options {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: 0;
+    margin-top: 1px;
+}
+.custom-contry-select .ms-dd .ms-header-middle-content, .ms-dd .ms-middle {align-items: center;}
+.custom-contry-select .ms-dd .ms-dd-arrow.ms-dd-pointer-down {
+    border: 0;
+}
+.custom-contry-select .ms-dd .ms-dd-arrow.ms-dd-pointer-down,.custom-contry-select .ms-dd .ms-dd-arrow.ms-dd-pointer-up{
+    background: url("../asset/images/drop_grey.png") no-repeat 97%;
+    width: 12px;
+    height: 6px;
+    background-size: cover;
+    border: 0;
+    right: 5px;
+}
+.country-code {
+    color: #686868;
+    opacity: 0.4;
+    position: relative;
+    padding: 0 16px 0 20px;
+}
+.country-code::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    background: grey;
+    top: 2px;
+    left: 10px;
+}
+.country-number input {
+    border: unset;
+}
+.login-modal .modal-header {
+    border-bottom: 0;
+}
+.medxinplate  .login-head {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.medxinplate .login-sub {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #686868;
+}
+.medxinplate  .continue-btn {
+    margin-top: 40px;
+    width: 100%;
+    background: #4FB861;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+}
+.medxinplate  .continue-btn:hover{
+    background: #4FB861;
+    color: #fff;
+}
+.login-with {
+    color: #686868;
+    width: auto;
+    text-align: center;
+    margin: 50px auto 0;
+    position: relative;
+}
+.login-with::before {
+    width: 36%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #686868;
+    opacity: 0.2;
+}
+.login-with::after {
+    width: 36%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    top: 10px;
+    background: #686868;
+    right: 0;
+    opacity: 0.2;
+}
+.google-fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 38px 0 30px;
+}
+.google-fb img {
+    margin: 0px 10px;
+}
+.new-to-med {
+    text-align: center;
+    color: #686868;
+}
+.new-to-med span {
+    color: #4FB861;
+    cursor: pointer;
+}
+.login-modal .modal-body {
+    padding: 0px 40px 40px 40px;
+}
+.otp-wrapper {
+    display: flex;
+}
+p.minutes {
+    margin-left: 16px;
+    color: #686868;
+}
+#otp input {
+    border: unset;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 0;
+    margin-right: 12px;
+}
+.verification .new-to-med {
+    margin-top: 31px;
+}
+span.pen {
+    padding-left: 20px;
+    cursor: pointer;
+}
+.regs-label {
+    color: #696969;
+    margin-bottom: 8px;
+}
+
+.medxinplate .name-input {
+    border: unset;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.registermodal1 div#datepicker input.form-control {
+    border: unset;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0;
+    margin-bottom: 20px;
+    background: url("../asset/images/calendor.png") no-repeat 95%;
+    cursor: pointer;
+}
+.termandcon input {
+    margin-right: 12px;
+}
+.termandcon span {
+    color: #4FB861;
+}
+.termandcon {
+    color: #2B2B2C;
+}
+.registermodal1 .new-to-med {
+    margin-top: 30px;
 }
