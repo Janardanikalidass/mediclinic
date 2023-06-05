@@ -66,6 +66,9 @@
 .immu-full-wrapper .top-wraper .zin-para {
     min-height: 60px;
 }
+.use-coupan {
+    margin-top: 20px;
+}
 }
 
 @media screen and (max-width:991px) {
@@ -144,6 +147,9 @@
 .immu-full-wrapper .top-wraper .zin-para {
     min-height: auto;
 }
+.medxinplate .cart-content h3 {margin-top: 10px;}
+.payment-btn .continue-btn {margin: 10px 0 0 0;}
+.payment-btn {flex-direction: column;}
 }
 @media screen and (max-width:575px) {
     .medxinplate .container{min-width: 390px; width: 390px;}
@@ -168,7 +174,7 @@
 .phr-content { margin-top: 15px;}
 .privacy-img img:first-child {padding-left: 0;}
 .privacy-img {margin-top: 10px;}
-.cart-quan-sec .qual-wrap {
-    width: 130px;
-}
+.cart-quan-sec .qual-wrap {width: 130px;}
+.usecou-head {flex-direction: column;align-items: flex-start;}
+.usecou-head p {margin-top: 5px;}
 }

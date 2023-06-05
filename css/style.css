@@ -175,7 +175,7 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
 .old-price {padding-left: 30px;color: #747E80;text-decoration: line-through;}
 .top-wraper .zin-para {font-weight: 600;margin: 20px 0 15px;}
 .price{display: flex; margin-bottom: 24px;}
-.medxinplate .add-to-cart {position:relative;width: 100%;border-radius: 5px;border: 1.2px solid #4FB861;border-radius: 5px;font-weight: 700;color: #4FB861;padding: 10px;  transition: all .5s ease-out;}
+.medxinplate .add-to-cart {position:relative;width: 100%;border-radius: 5px;border: 1.2px solid #4FB861;border-radius: 5px;font-weight: 600;color: #4FB861;padding: 10px;  transition: all .5s ease-out;}
 .medxinplate .add-to-cart:hover{width: 100%;transition: all .5s ease-out;background: #4FB861;}
 /* .medxinplate .add-to-cart::after{width: 0;position: absolute;border-radius: 5px;background: #4FB861;transition: all .5s ease-out;content: "";    height: 100%;left: 0;top: 0;} */
 /* .top-wrap-img {display: flex;padding: 17px;align-items: center;justify-content: center;} */
@@ -256,7 +256,7 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
 .round,.round1{
     position: relative;
   }
-  .round label,.round1 label  {
+  .round label,.round1 label,.round2 label  {
   background: url("../asset/images/without-check.png");
     border-radius: 50%;
     cursor: pointer;
@@ -266,7 +266,7 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
     top: 0;
     width: 22px;
   }
-  .round label:after,.round1 label:after {
+  .round label:after,.round1 label:after,.round2 label:after {
     content: "";
     height: 12px;
     top: 5px;
@@ -276,13 +276,13 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
     opacity: 0;
     position: absolute;
   }
-  .round input[type="radio"],.round1 input[type="radio"] {
+  .round input[type="radio"],.round1 input[type="radio"],.round2 input[type="radio"] {
     visibility: hidden;
   }
-  .round input[type="radio"]:checked + label:after, .round1 input[type="radio"]:checked + label:after {
+  .round input[type="radio"]:checked + label:after, .round1 input[type="radio"]:checked + label:after,.round2 input[type="radio"]:checked + label:after {
     opacity: 1;
   }
-  .round input[type="radio"]:not(:checked) + label:after,.round1 input[type="radio"]:not(:checked) + label:after {opacity: 0;}
+  .round input[type="radio"]:not(:checked) + label:after,.round1 input[type="radio"]:not(:checked) + label:after,.round2 input[type="radio"]:not(:checked) + label:after {opacity: 0;}
 
   
  
@@ -833,6 +833,7 @@ span.pen {
     padding: 16px 40px 24px 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .cart-img-item {
     width: 140px;
@@ -845,7 +846,6 @@ span.pen {
     width: 100%;
     height: 100%;
 }
-
 .medxinplate .cart-content h3 {
     margin-bottom: 6px;
     font-weight: 600;
@@ -866,7 +866,6 @@ span.pen {
     width: 60%;
 
 }
-
 .cart-quan-sec {
     display: flex;
     align-items: center;
@@ -874,7 +873,140 @@ span.pen {
     width: 40%;
     margin-left: 30px;
 }
-
 .remove-cart {
     margin-left: 20px;
+}
+.add-new-add {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #4FB861;
+}
+.add-new-add img {
+    margin-right: 10px;
+}
+.use-coupan {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 20px;
+}
+.usecou-head h3 {
+    font-weight: 600;
+}
+.usecou-head p {
+    color: #4FB861;
+    font-weight: 600;
+}
+.usecou-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.coupan-input {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    position: relative;
+}
+.coupan-input input {
+    width: 100%;
+    border: 0;
+    padding: 14px;
+}
+.coupan-input p {
+    color: #4FB861;
+    position: absolute;
+    top: 15px;
+    right: 11px;
+    display: block;
+    font-weight: 600;
+}
+.order-summary {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.medxinplate 
+ .sum-head {
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.order-price-det-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.order-price-det-inner h3 {
+    color: #747E80;
+}
+.order-price-det-inner p {
+    font-weight: 600;
+}
+.paymen-amt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid #CCD3D3;
+}
+.payment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.payment-btn .continue-btn {
+    margin-top: 0;
+    padding: 11px;
+    margin-left: 20px;
+}
+.paymen-amt p {
+    font-weight: 600;
+}
+.add-new-add-details {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 23px;
+}
+.add-new-add-details .inner-add {
+    border: unset;
+    padding: 0;
+}
+.new-add-label {
+    color: #747E80;
+    margin-bottom: 4px;
+}
+.new-add-input {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 14px 15px 14px 25px;
+}
+.new-add-label {
+    color: #747E80;
+    margin-bottom: 4px;
+}
+.new-add-input {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 14px 15px 14px 25px;
+    margin-bottom: 30px;
+}
+.address-input {
+    position: relative;
+}
+.address-input .gps {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+.address-input input {
+    padding-right: 45px;
+}
+.save-address {
+    margin-top: 30px;
+    width: 240px;
+    max-width: 240px;
 }
