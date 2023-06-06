@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medxinplate</title>
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="medxinplate diagnostics-section ">
+        <header>
+            <div class="container header">
+                <div class="left-wrapper">
+                    <div class="logo"><img src="./asset/images/logo.png" alt="logo"></div>
+                    <div class="search-wrapper">
+                        <div class="sear-icon"><img src="./asset/images/search.png" alt="search icon"></div>
+                        <input type="text" class="form-control font-16"  placeholder="Search for Medicine..." >
+                        <button class="btn">search</button>
+                    </div>
+                    <div class="ham-menu btn6" data-menu="6">
+                        <div class="icon"></div>
+                      </div>
+                </div>
+              
+                <div class="nav-wrapper">
+                    <div class="nav-content">
+                        <ul>
+                            <li class="font-16 active">Home</li>
+                            <li class="font-16">Pharmacy</li>
+                            <li class="font-16">Diagnostics</li>
+                            <li class="font-16">Doctors</li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <div class="cart-img"><img src="./asset/images/cart.png" alt="cart img"></div>
+                        <div class="cart-item font-12">9<span>+</span></div>
+                    </div>
+                    <div class="login">
+                        <div class="user-logo"> <img src="./asset/images/userlogo.png" alt="userlogo"></div>
+                        <p class="font-16">Login</p>
+                        <img src="./asset/images/downarrow.png" alt="downarrow">
+                    </div>
+                </div>
+               
+            </div>
+        </header>
+        <section class="breadcrums">
+            <div class="container">
+            <ul>
+                <li><img src="./asset/images/home.png" alt="">
+                     Home</li>
+                <li>Pharmacy</li>
+                <li>Immunity & Vitamin Supplementary System</li>
+            </ul>
+        </div>
+        </section>
+        <section>
+            <div class="filter-head">
+                <div class="leftsection-filter">
+                    <div class="cross-icon">  <i class="fa fa-times" aria-hidden="true"></i></div>
+                    <h2 class="font-24 left-fil-head">Filter</h2>
+                    <div class="sub-cate">
+                        <h2 class="font-18 cat-head">Category</h2>
+                        <ul class="sub-fil-ul">
+                            <li class="sub-fil-active">
+                                <p>General Medicine</p>
+                                
+                            <div class="radio">
+                                <div class="round">
+                                    <input type="radio" id="test1" name="radio-group" checked>
+                                    <label for="test1"></label>
+                                  </div>
+                            </div>
+                            </li>
+                            <li><p>Paediatrics</p> 
+                                <div class="radio">
+                                <div class="round">
+                                    <input type="radio" id="test2" name="radio-group">
+                                    <label for="test2"></label>
+                                  </div>
+                            </div></li>
+                            <li><p>Diabetology</p> <div class="radio">
+                                    <div class="round">
+                                        <input type="radio"  id="checkbox2" name="radio-group"/>
+                                        <label for="checkbox2"></label>
+                                      </div>
+                                </div></li>
+                            <li><p>Cardiology</p> <div class="radio">
+                                <div class="round">
+                                    <input type="radio"  id="checkbox3" name="radio-group" />
+                                    <label for="checkbox3"></label>
+                                  </div>
+                            </div></li>
+                            <li><p>Neurology</p> <div class="radio">
+                                <div class="round">
+                                    <input type="radio"  id="checkbox4" name="radio-group" />
+                                    <label for="checkbox4"></label>
+                                  </div>
+                            </div></li>
+                        </ul>
+                        <div class="view-fil-more">
+                            <p class="font-15">View More</p>
+                            <img src="./asset/images/down-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sub-cate">
+                        <h2 class="font-18 cat-head">Sub Category</h2>
+                        <ul class="sub-fil-ul">
+                            <li class="sub-fil-active">
+                                <p>0 - 5 Years</p>
+                                
+                            <div class="radio ">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox5" name="radio-group1" checked/>
+                                    <label for="checkbox5"></label>
+                                  </div>
+                            </div>
+                            </li>
+                            <li><p>5 - 10 Years</p> 
+                                <div class="radio ">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox6" name="radio-group1" />
+                                    <label for="checkbox6"></label>
+                                  </div>
+                            </div></li>
+                            <li><p>10- 15 Years</p> <div class="radio">
+                                    <div class=" round1">
+                                        <input type="radio"  id="checkbox7" name="radio-group1" />
+                                        <label for="checkbox7"></label>
+                                      </div>
+                                </div></li>
+                            <li><p>15 - 20 Years</p> <div class="radio">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox8" name="radio-group1" />
+                                    <label for="checkbox8"></label>
+                                  </div>
+                            </div></li>
+                            <li><p>20 - 25+ Years</p> <div class="radio">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox9" name="radio-group1" />
+                                    <label for="checkbox9"></label>
+                                  </div>
+                            </div></li>
+                        </ul>
+                        <div class="view-fil-more">
+                            <p class="font-15">View More</p>
+                            <img src="./asset/images/down-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sub-lang ">
+                        <h2 class="font-18 cat-head">Language</h2>
+                        <ul class="sub-fil-ul">
+                            <li >
+                                <p>English</p>
+                                
+                            <div class="radio language-radio">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox10" name="radio-group2"/>
+                                    <label for="checkbox10"></label>
+                                  </div>
+                            </div>
+                            </li>
+                            <li class="sub-fil-active"><p>Tamil</p> 
+                                <div class="radio language-radio">
+                                <div class=" round1">
+                                    <input type="radio"  id="checkbox11" name="radio-group2" checked />
+                                    <label for="checkbox11"></label>
+                                  </div>
+                            </div></li>
+                          
+                        </ul>
+                    </div>
+                  
+                </div>
+                <div class="right-section-filter doctor-list-wrapper">
+                   
+                  
+                    <div class="filter-here">Filter</div>
+                    <div class="immu-head">
+                        <p  class="font-22">General Medicine -   <span>(68 Doctors)</span> </p>
+                        <div class="filter-sel">
+                            <select class="form-select font-16">
+                                <option value=""   class="font-16">Sort By</option>
+                                <option class="font-16">Availability</option>
+                                <option class="font-16">Nearby</option>
+                                <option class="font-16">Years of Experiecnce</option>
+                                <option class="font-16"> Popular Doctor</option>
+                              </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="immu-full-wrapper">
+                        <div class="top-offer-head">
+                        
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_1.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala</h3>
+                            <p class="doc-exp font-16">12+ yr Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_2.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jhansi Lakshmi Parasa
+                                Priyanka Mohan</h3>
+                            <p class="doc-exp font-16">7.8+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_3.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Ambidi Sai Krishna</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_4.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Nerella .Prathusha</h3>
+                            <p class="doc-exp font-16">1+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_5.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Murali Krishna Chundi 
+                                Venkata</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_6.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala
+                                Jyothirmayi Tangirala</h3>
+                            <p class="doc-exp font-16">5+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_7.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jhansi Lakshmi Parasa
+                                Priyanka Mohan</h3>
+                            <p class="doc-exp font-16">7.8+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_8.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Ambidi Sai Krishna</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_9.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Nerella .Prathusha</h3>
+                            <p class="doc-exp font-16">1+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_10.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Murali Krishna Chundi 
+                                Venkata</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_11.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala</h3>
+                            <p class="doc-exp font-16">12+ yr Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_2.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jhansi Lakshmi Parasa
+                                Priyanka Mohan</h3>
+                            <p class="doc-exp font-16">7.8+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_3.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Ambidi Sai Krishna</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_4.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Nerella .Prathusha</h3>
+                            <p class="doc-exp font-16">1+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_5.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Murali Krishna Chundi 
+                                Venkata</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_6.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala
+                                Jyothirmayi Tangirala</h3>
+                            <p class="doc-exp font-16">5+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_7.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Jhansi Lakshmi Parasa
+                                Priyanka Mohan</h3>
+                            <p class="doc-exp font-16">7.8+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_8.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Ambidi Sai Krishna</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_9.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Nerella .Prathusha</h3>
+                            <p class="doc-exp font-16">1+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                        <div class="top-wraper">
+                            <div class="top-wrap-img"><img src="./asset/images/Doctors List_10.png" alt="top_offer_1"></div>
+                            <h3 class="doc-head font-18">Dr. Murali Krishna Chundi 
+                                Venkata</h3>
+                            <p class="doc-exp font-16">10+ years Experience</p>
+                                <button class="btn add-to-cart font-16"><p>Book Appointment</p></button>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </section>
+        <footer>
+         <div class="footer-top">
+            <div class="container footer-wrapper">
+                <div class="foot-1 foot">
+                    <div class="foot-logo"><img src="./asset/images/footerlogo.png" alt="footlogo"></div>
+                    <p class="font-15">Lorem ipsum dolor sit amet, conse
+                        ctetur adipiscing elit, sed do eiusm
+                        od tempor incididunt ut.</p>
+                </div>
+                <div class="foot-2 foot">
+                    <ul>
+                        <li class="font-16px">Our Services</li>
+                        <li class="font-15">Order Medicine</li>
+                        <li class="font-15">Healthcare Products</li>
+                        <li class="font-15">Lab Tests</li>
+                    </ul>
+                </div>
+                <div class="foot-3 foot">
+                    <ul>
+                        <li class="font-16px">Featured Categories</li>
+                        <li class="font-15">Pharmacy</li>
+                        <li class="font-15">Diagnostics</li>
+                        <li class="font-15">Doctors</li>
+                    </ul>
+                </div>
+                <div class="foot-4 foot">
+                    <ul>
+                        <li class="font-16px">Company</li>
+                        <li class="font-15">About Us</li>
+                        <li class="font-15">Careers</li>
+                        <li class="font-15">Blog</li>
+                    </ul>
+                </div>
+                <div class="foot-5 foot">
+                    <ul>
+                       <li class="font-16px">Policy Info</li>
+                       <li class="font-15">Privacy Policy</li>
+                       <li class="font-15">Terms and Condition</li>
+                       <li class="font-15">FAQ</li>
+                       <li class="font-15">Return Policy</li>
+                    </ul>
+                </div>
+                <div class="foot-6 foot">
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>
+                            <img src="./asset/images/contact-1.png" alt="contact-1">
+                            <p> <span>Zeughausstrasse 43,</span> <span>Zürich, Switzerland</span> </p>
+                        </li>
+                        <li>
+                            <img src="./asset/images/contact-2.png" alt="contact-2">
+                            <p>+088 234 432 15562</p>
+                        </li>
+                        <li>
+                            <img src="./asset/images/contact-3.png" alt="contact-3">
+                            <p>info@mediclinic.net</p>
+                        </li>
+                        <li>
+                            <img src="./asset/images/contact-4.png" alt="contact-4">
+                            <p>mediclinic.in</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container foot-bot-wrapper">
+            <div class="helpcenter"><img src="./asset/images/help.png" alt="help"><p class="font-14">Help Center</p></div>
+            <div class="privacy">
+                <span class="font-14">Terms of use</span>
+                <span class="font-14">Privacy Policy</span>
+                <span class="font-14">Copyright Mediclinic Limited</span>
+            </div>
+            <div class="privacy-img">
+                <img src="./asset/images/privacy-1.png" alt="privacy-1">
+                <img src="./asset/images/privacy-2.png" alt="privacy-2">
+                <img src="./asset/images/privacy-3.png" alt="privacy-3">
+            </div>
+        </div>
+         </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

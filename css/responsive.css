@@ -69,6 +69,12 @@
 .use-coupan {
     margin-top: 20px;
 }
+
+.infec-dis,.doc-langu,.doc-avail{    margin-bottom: 15px;}
+.continue-btn.doc-app-btn {margin-top: 20px;}
+.doc-avail {flex-direction: column;align-items: flex-start;}
+.doctor-availabilit{margin-left: 0;}
+.doctor-availabilit,.share-content {margin-top: 10px;}
 }
 
 @media screen and (max-width:991px) {
@@ -106,7 +112,7 @@
 }
 .filter-here,.cross-icon {display: block;}
 .parm-para{    min-height: 101px;}
-
+.medxinplate .gene-med {margin-top: 20px;}
 }
 
 @media screen and (max-width:767px) { 
@@ -177,4 +183,7 @@
 .cart-quan-sec .qual-wrap {width: 130px;}
 .usecou-head {flex-direction: column;align-items: flex-start;}
 .usecou-head p {margin-top: 5px;}
+.consult-select,.doc-avail-select,.continue-btn.doc-app-btn{    width: 230px;}
+.infec-dis {flex-direction: column;}
+.infec-dis span:first-child{margin-bottom: 10px;}
 }

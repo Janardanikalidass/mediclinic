@@ -194,7 +194,7 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
 .popular-doc-wrap {padding: 20px;border: 1px solid #CCD3D3;border-radius: 5px;}
 .doc-head {font-weight: 700;padding: 20px 0 10px;min-height: 88px;}
 .doc-para {min-height: 40px;}
-.popular-doc-wrap .doc-exp {margin: 10px 0 23px;color: #747E80;}
+.popular-doc-wrap .doc-exp,.doctor-list-wrapper .doc-exp {margin: 10px 0 23px;color: #747E80;}
 .flat-img {width: 100%;}
 .flat-img img {width: 100%;object-fit: cover;}
 .new-price {font-weight: 700;}
@@ -221,7 +221,7 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
 .immu-full-wrapper .top-wraper:nth-child(10n-7) .top-wrap-img{background: #F6DCD4;}
 .immu-full-wrapper .top-wraper:nth-child(10n-8) .top-wrap-img{background: #E7E5DE;}
 .immu-full-wrapper .top-wraper:nth-child(10n-9) .top-wrap-img{background: #FEECDC;}
-
+.doctor-list-wrapper .immu-full-wrapper .top-wraper:nth-child(n) .top-wrap-img{background: unset;}
 .breadcrums{
     background: #F2F7F3;
 }
@@ -265,6 +265,13 @@ span.view-img {width: 10px;height: 100%;display: flex;margin-left: 8px;}
     position: absolute;
     top: 0;
     width: 22px;
+  }
+  .language-radio .round1 label{
+    background: url("../asset/images/without-rec.png");    border-radius: unset;
+  }
+  .language-radio .round1 label:after{
+    background: url("../asset/images/with-rectangle.png"); height: 22px;top: 0px;width: 22px;
+    left: 0px;
   }
   .round label:after,.round1 label:after,.round2 label:after {
     content: "";
@@ -1009,4 +1016,202 @@ span.pen {
     margin-top: 30px;
     width: 240px;
     max-width: 240px;
+}
+.gen-doc-img {
+    width: 100%;
+    height: 100%;
+}
+
+.gen-doc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.general-doc {
+    margin: 40px 0 50px;
+}
+
+.medxinplate .gene-med {
+    text-decoration-line: underline;
+
+/* Primary */
+    color: #4FB861;
+    margin-bottom: 14px;
+}
+.medxinplate .gen-doc-name {
+    color: #1A2021;
+    font-weight: 600;
+}
+.infec-dis {
+    color: #747E80;
+    display: flex;
+    margin-bottom: 30px;
+}
+.infec-dis span:first-child {
+    padding-right: 16px;
+}
+
+.infec-dis span:last-child {
+    padding-left: 16px;
+    position: relative;
+}
+.infec-dis span:last-child::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #747E80;
+    border-radius: 50%;
+    left: 0;
+    top: 10px;
+    opacity: 0.5;
+}
+.doc-langu h3 {
+    color: #747E80;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.inner-lan {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner-lan span {
+    padding-right: 26px;
+    position: relative;
+}
+.inner-lan span::before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background: grey;
+    border-radius: 50%;
+    top: 6px;
+    right: 10px;
+}
+.inner-lan span:last-child::before {
+    display: none;
+}
+.doc-langu {
+    margin-bottom: 30px;
+}
+.clinic-location h3 {
+    color: #747E80;
+    margin-bottom: 10px;
+}
+.doc-avail {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.consult-time h3 {
+    color: #747E80;
+}
+.doctor-availabilit h3 {
+    color: #747E80;
+}
+.consult-select {
+    width: 313px;
+    margin-top: 10px;
+}
+.doc-avail-select {
+    width: 313px;
+    margin-top: 10px;
+}
+.doctor-availabilit {
+    margin-left: 20px;
+}
+.continue-btn.doc-app-btn {
+    width: 313px;
+    height: 50px;
+    padding: 10px;
+}
+.share-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.share-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.share-wrapper img {
+    margin-right: 6px;
+}
+.top-wrap-img {
+    width: 100%;
+}
+.diagnostics-section .top-wrap-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.diagnostics-section .top-wrap-img {
+    padding: 0;
+}
+.cancer-wrapper .doc-head {
+    min-height: auto;
+}
+.sub-cat-search {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+    padding: 10px 10px 10px 38px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.sub-cat-search img {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+}
+.sub-cat-search input {
+    border: 0;
+    padding: 0;
+}
+.cancer-section .sub-cate:last-child {
+    border-bottom: 0;
+}
+/* my account  */
+.myaccount-tab .nav {
+    flex-direction: column;
+}
+.myaccount-tab {
+    border: 1px solid #CCD3D3;
+    border-radius: 5px;
+}
+.myaccount-tab .nav-item a {
+    display: flex;
+    color: #1A2021;
+    padding: 7px 20px;
+    align-items: center;
+}
+.account-img {
+    width: 36px;
+    height: 36px;
+    background: #EDF8EF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.account-img img {
+    width: auto;
+}
+.myaccount-tab .nav-item {
+  
+    margin-bottom: 16px;
+}
+.myaccount-tab .nav-item:first-child a.active {
+    border-radius: 5px 5px 0px 0px;
+}
+.myaccount-tab .nav-item a.active {
+    background: #4FB861;
+    color: #FFFFFF;
 }
