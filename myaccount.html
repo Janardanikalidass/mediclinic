@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="dist/js/dd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/js/dd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/css/dd.min.css" />
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
 
 <body>
@@ -21,14 +26,14 @@
                     <div class="logo"><img src="./asset/images/logo.png" alt="logo"></div>
                     <div class="search-wrapper">
                         <div class="sear-icon"><img src="./asset/images/search.png" alt="search icon"></div>
-                        <input type="text" class="form-control font-16"  placeholder="Search for Medicine..." >
+                        <input type="text" class="form-control font-16" placeholder="Search for Medicine...">
                         <button class="btn">search</button>
                     </div>
                     <div class="ham-menu btn6" data-menu="6">
                         <div class="icon"></div>
-                      </div>
+                    </div>
                 </div>
-              
+
                 <div class="nav-wrapper">
                     <div class="nav-content">
                         <ul>
@@ -48,147 +53,501 @@
                         <img src="./asset/images/downarrow.png" alt="downarrow">
                     </div>
                 </div>
-               
+
             </div>
         </header>
         <section class="myaccount">
             <div class="container">
-            <div class="row">
-            <div class="col-lg-3">
-                <div class="myaccount-tab">
-                    <ul class="nav" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" data-bs-toggle="tab" href="#home">
-                            <div class="account-img"><img src="./asset/images/my_account_profile.png" alt=""></div>
-                            <p class="account-tab-name font-16">My Account</p>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" data-bs-toggle="tab" href="#menu1"> 
-                            <div class="account-img"><img src="./asset/images/my_account_order.png" alt=""></div>
-                            <p class="account-tab-name font-16">My Orders</p>
-                        </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" data-bs-toggle="tab" href="#menu2">
-                            <div class="account-img"><img src="./asset/images/my_account_booking.png" alt=""></div>
-                            <p class="account-tab-name font-16">My Bookings</p>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu3">
-                              <div class="account-img"><img src="./asset/images/my_account_logout.png" alt=""></div>
-                              <p class="account-tab-name font-16">Logout</p>
-                             </a>
-                          </li>
-                      </ul>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="myaccount-tab">
+                            <ul class="nav" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                                        <div class="account-img"><img src="./asset/images/my_account_profile.png"
+                                                alt=""></div>
+                                        <p class="account-tab-name font-16">My Account</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+                                        <div class="account-img"><img src="./asset/images/my_account_order.png" alt="">
+                                        </div>
+                                        <p class="account-tab-name font-16">My Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu2">
+                                        <div class="account-img"><img src="./asset/images/my_account_booking.png"
+                                                alt=""></div>
+                                        <p class="account-tab-name font-16">My Bookings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="./homepage_guest.html">
+                                        <div class="account-img"><img src="./asset/images/my_account_logout.png" alt="">
+                                        </div>
+                                        <p class="account-tab-name font-16">Logout</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <div id="home" class=" tab-pane active">
+                                <div class="personal-information">
+                                    <h3 class="font-18 per-common-head">Personal Information</h3>
+                                    <div class="advatar-wrapper">
+                                        <div class="avatar-name">
+                                            <div class="avatar-img">
+                                                <img src="./asset/images/my_account_profile.png" alt="">
+                                            </div>
+                                            <div class="avatar mail">
+                                                <h3 class="font-16">Ajith Kumar. S</h3>
+                                                <p class="font-14">ajithkumar.s@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="avatar-btn">
+                                            <button class="btn font-16">Add Avatar</button>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <div class="basic-information">
+                                            <h3 class="font-16">Basic Details</h3>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Full Name</label>
+                                                    <input type="text" class="font-16 form-control" value="Ajith">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Last Name</label>
+                                                    <input type="text" class="font-16 form-control" value="Kumar">
+                                                </div>
+                                                <div class="col-lg-4 .registermodal1 myaccount-date-picker">
+                                                    <label for="" class="font-14">Date of Birth</label>
+                                                    <div id="datepicker" class="input-group date"
+                                                        data-date-format="mm-dd-yyyy">
+                                                        <input class="form-control font-18" type="text" readonly />
+                                                        <span class="input-group-addon">
+                                                            <i class="glyphicon glyphicon-calendar"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Mobile Number</label>
+                                                    <input type="text" class="font-16 form-control"
+                                                        value="+91 96587 41236">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Email Address</label>
+                                                    <div class="basic-email-inpt">
+                                                        <input type="email" class="font-16 form-control "
+                                                            value="ajithkumar@gmail.com">
+                                                        <img src="./asset/images/my_account_email_tick.png" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basic-information">
+                                            <div class="basic-add-information">
+                                                <h3 class="font-16">Address Details</h3>
+                                                <div class="add-new-add">
+                                                    <img src="./asset/images/plus.png" alt="plus">
+                                                    <p class="font-16">Add New Address</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Pin Code</label>
+                                                    <input type="text" class="font-16 form-control"
+                                                        value="6000012">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">City</label>
+                                                    <input type="text" class="font-16 form-control"
+                                                        value="Chennai">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">State</label>
+                                                    <input type="text" class="font-16 form-control"
+                                                        value="Tamil Nadu">
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <label for="" class="font-14">Address</label>
+                                                    <div class="address-input">
+                                                        <input type="text" class="form-control font-16 new-add-input" value="(Colan Infotech) Murugesh Nayakar Complex, 2, Unit-2, D 84, B Block, 4th Floor">
+                                                        <img src="./asset/images/gps.png" alt="gps" class="gps">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="" class="font-14">Landmark</label>
+                                                  
+                                                        <input type="email" class="font-16 form-control "
+                                                            value="Colan Infotech">
+                                                        
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basic-info-btn">
+                                            <button class="btn add-to-cart font-16"><p>Cancel Changes</p></button>
+                                            <button class="btn continue-btn font-18"  >Proceed to Pay</button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class=" tab-pane fade">
+                                <div class="my-orders">
+                                    <div class="order-head">
+                                        <h3 class="font-18">My Orders</h3>
+                                        <select class="form-select font-16 new-add-input">
+                                            <option>All Orders</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                          </select>
+                                    </div>
+                                    <div class="items-cart-wrapper">               
+                                        <div class="cart-quan">
+                                            <div class="cart-img-item"><img src="./asset/images/add_to_cart_1.png" alt=""></div>
+                                       
+                                        <div class="cart-content">
+                                            <h3 class="font-16">Zingavita Vitamin C Amla Extract 1000mg Tablet</h3>
+                                            <p class="cart-inner-content font-15">60 units in this bottle</p>
+                                            <p class="cart-price font-22">$156</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-quan-sec">
+                                        
+                                            <button class="btn delivery-status pending">Pending</button>
+                                            <div class="delivery-date font-14">
+                                                <span>Delivery Expect Date :</span>
+                                                <span> 17 Feb, 2023</span>
+                                            </div>
+                                     
+                                    </div>
+                                    </div>
+                                    <div class="order-id-details">
+                                        <div class="left-order-id">
+                                            <div class="order-num-id font-14"><span>Order ID :</span> <span> MED7895462312</span></div>
+                                            <div class="order-num-id font-14"><span>Order BY :</span> <span>17 Feb, 2023 - 10:50 AM</span></div>
+                                        </div>
+                                        <div class="order-buttons">
+                                            <button class="btn add-to-cart font-16" data-bs-toggle="modal" data-bs-target="#order-detailpop"><p>View Detail</p></button>
+                                            <button class="btn continue-btn font-18"  >Repeat Order</button>
+                                        </div>
+                                    </div>
+                                    <div class="items-cart-wrapper">               
+                                        <div class="cart-quan">
+                                            <div class="cart-img-item"><img src="./asset/images/add_to_cart_2.png" alt=""></div>
+                                       
+                                        <div class="cart-content">
+                                            <h3 class="font-16">Ustraa Mooch & Beard Oil (35ml Each)</h3>
+                                            <p class="cart-inner-content font-15"> 2 bottle of 250 ML in this pack</p>
+                                            <p class="cart-price font-22">$156</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-quan-sec">
+                                        <button class="btn delivery-status delivered">Delivered</button>
+                                        <div class="delivery-date font-14">
+                                            <span>Delivery Expect Date :</span>
+                                            <span> 17 Feb, 2023</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="order-id-details">
+                                        <div class="left-order-id">
+                                            <div class="order-num-id font-14"><span>Order ID :</span> <span> MED7895462312</span></div>
+                                            <div class="order-num-id font-14"><span>Order BY :</span> <span>17 Feb, 2023 - 10:50 AM</span></div>
+                                        </div>
+                                        <div class="order-buttons">
+                                            <button class="btn add-to-cart font-16"><p>View Detail</p></button>
+                                            <button class="btn continue-btn font-18"  >Repeat Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class=" tab-pane fade">
+                                <div class="my-orders">
+                                    <div class="order-head">
+                                        <h3 class="font-18">My Orders</h3>
+                                        <select class="form-select font-16 new-add-input">
+                                            <option>All Orders</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                          </select>
+                                    </div>
+                                    <div class="items-cart-wrapper">               
+                                        <div class="cart-quan">
+                                            <div class="cart-img-item"><img src="./asset/images/Doctors List_1.png" alt=""></div>
+                                       
+                                        <div class="cart-content">
+                                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala</h3>
+                                <p class="doc-para font-16">General Medicine</p>
+                                <p class="doc-exp font-16">12+ yr Experience</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-quan-sec">
+                                            <button class="btn delivery-status pending">Pending</button>
+                                    </div>
+                                    </div>
+                                    <div class="order-id-details">
+                                        <div class="left-order-id">
+                                            <div class="order-num-id font-14"><span>Order ID :</span> <span> MED7895462312</span></div>
+                                            <div class="order-num-id font-14"><span>Order BY :</span> <span>17 Feb, 2023 - 10:50 AM</span></div>
+                                        </div>
+                                        <div class="order-buttons">
+                                            <button class="btn add-to-cart font-16" data-bs-toggle="modal" data-bs-target="#booking-detailpop"><p>View Detail</p></button>
+                                            <button class="btn continue-btn font-18"  >Repeat Order</button>
+                                        </div>
+                                    </div>
+                                    <div class="items-cart-wrapper">               
+                                        <div class="cart-quan">
+                                            <div class="cart-img-item"><img src="./asset/images/Doctors List_2.png" alt=""></div>
+                                       
+                                        <div class="cart-content">
+                                            <h3 class="doc-head font-18">Dr. Jyothirmayi Tangirala</h3>
+                                            <p class="doc-para font-16">General Medicine</p>
+                                            <p class="doc-exp font-16">12+ yr Experience</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-quan-sec">
+                                        <button class="btn delivery-status delivered">Accepted</button>
+                                    </div>
+                                    </div>
+                                    <div class="order-id-details">
+                                        <div class="left-order-id">
+                                            <div class="order-num-id font-14"><span>Order ID :</span> <span> MED7895462312</span></div>
+                                            <div class="order-num-id font-14"><span>Order BY :</span> <span>17 Feb, 2023 - 10:50 AM</span></div>
+                                        </div>
+                                        <div class="order-buttons">
+                                            <button class="btn add-to-cart font-16"><p>View Detail</p></button>
+                                            <button class="btn continue-btn font-18"  >Repeat Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-9">
-
-                <div class="tab-content">
-                    <div id="home" class="container tab-pane active"><br>
-                      <h3>HOME</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div id="menu1" class="container tab-pane fade"><br>
-                      <h3>Menu 1</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div id="menu2" class="container tab-pane fade"><br>
-                      <h3>Menu 2</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
         </section>
         <footer>
-         <div class="footer-top">
-            <div class="container footer-wrapper">
-                <div class="foot-1 foot">
-                    <div class="foot-logo"><img src="./asset/images/footerlogo.png" alt="footlogo"></div>
-                    <p class="font-15">Lorem ipsum dolor sit amet, conse
-                        ctetur adipiscing elit, sed do eiusm
-                        od tempor incididunt ut.</p>
-                </div>
-                <div class="foot-2 foot">
-                    <ul>
-                        <li class="font-16px">Our Services</li>
-                        <li class="font-15">Order Medicine</li>
-                        <li class="font-15">Healthcare Products</li>
-                        <li class="font-15">Lab Tests</li>
-                    </ul>
-                </div>
-                <div class="foot-3 foot">
-                    <ul>
-                        <li class="font-16px">Featured Categories</li>
-                        <li class="font-15">Pharmacy</li>
-                        <li class="font-15">Diagnostics</li>
-                        <li class="font-15">Doctors</li>
-                    </ul>
-                </div>
-                <div class="foot-4 foot">
-                    <ul>
-                        <li class="font-16px">Company</li>
-                        <li class="font-15">About Us</li>
-                        <li class="font-15">Careers</li>
-                        <li class="font-15">Blog</li>
-                    </ul>
-                </div>
-                <div class="foot-5 foot">
-                    <ul>
-                       <li class="font-16px">Policy Info</li>
-                       <li class="font-15">Privacy Policy</li>
-                       <li class="font-15">Terms and Condition</li>
-                       <li class="font-15">FAQ</li>
-                       <li class="font-15">Return Policy</li>
-                    </ul>
-                </div>
-                <div class="foot-6 foot">
-                    <ul>
-                        <li>Contact Us</li>
-                        <li>
-                            <img src="./asset/images/contact-1.png" alt="contact-1">
-                            <p> <span>Zeughausstrasse 43,</span> <span>Zürich, Switzerland</span> </p>
-                        </li>
-                        <li>
-                            <img src="./asset/images/contact-2.png" alt="contact-2">
-                            <p>+088 234 432 15562</p>
-                        </li>
-                        <li>
-                            <img src="./asset/images/contact-3.png" alt="contact-3">
-                            <p>info@mediclinic.net</p>
-                        </li>
-                        <li>
-                            <img src="./asset/images/contact-4.png" alt="contact-4">
-                            <p>mediclinic.in</p>
-                        </li>
-                    </ul>
+            <div class="footer-top">
+                <div class="container footer-wrapper">
+                    <div class="foot-1 foot">
+                        <div class="foot-logo"><img src="./asset/images/footerlogo.png" alt="footlogo"></div>
+                        <p class="font-15">Lorem ipsum dolor sit amet, conse
+                            ctetur adipiscing elit, sed do eiusm
+                            od tempor incididunt ut.</p>
+                    </div>
+                    <div class="foot-2 foot">
+                        <ul>
+                            <li class="font-16px">Our Services</li>
+                            <li class="font-15">Order Medicine</li>
+                            <li class="font-15">Healthcare Products</li>
+                            <li class="font-15">Lab Tests</li>
+                        </ul>
+                    </div>
+                    <div class="foot-3 foot">
+                        <ul>
+                            <li class="font-16px">Featured Categories</li>
+                            <li class="font-15">Pharmacy</li>
+                            <li class="font-15">Diagnostics</li>
+                            <li class="font-15">Doctors</li>
+                        </ul>
+                    </div>
+                    <div class="foot-4 foot">
+                        <ul>
+                            <li class="font-16px">Company</li>
+                            <li class="font-15">About Us</li>
+                            <li class="font-15">Careers</li>
+                            <li class="font-15">Blog</li>
+                        </ul>
+                    </div>
+                    <div class="foot-5 foot">
+                        <ul>
+                            <li class="font-16px">Policy Info</li>
+                            <li class="font-15">Privacy Policy</li>
+                            <li class="font-15">Terms and Condition</li>
+                            <li class="font-15">FAQ</li>
+                            <li class="font-15">Return Policy</li>
+                        </ul>
+                    </div>
+                    <div class="foot-6 foot">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>
+                                <img src="./asset/images/contact-1.png" alt="contact-1">
+                                <p> <span>Zeughausstrasse 43,</span> <span>Zürich, Switzerland</span> </p>
+                            </li>
+                            <li>
+                                <img src="./asset/images/contact-2.png" alt="contact-2">
+                                <p>+088 234 432 15562</p>
+                            </li>
+                            <li>
+                                <img src="./asset/images/contact-3.png" alt="contact-3">
+                                <p>info@mediclinic.net</p>
+                            </li>
+                            <li>
+                                <img src="./asset/images/contact-4.png" alt="contact-4">
+                                <p>mediclinic.in</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-         </div>
-         <div class="footer-bottom">
-            <div class="container foot-bot-wrapper">
-            <div class="helpcenter"><img src="./asset/images/help.png" alt="help"><p class="font-14">Help Center</p></div>
-            <div class="privacy">
-                <span class="font-14">Terms of use</span>
-                <span class="font-14">Privacy Policy</span>
-                <span class="font-14">Copyright Mediclinic Limited</span>
+            <div class="footer-bottom">
+                <div class="container foot-bot-wrapper">
+                    <div class="helpcenter"><img src="./asset/images/help.png" alt="help">
+                        <p class="font-14">Help Center</p>
+                    </div>
+                    <div class="privacy">
+                        <span class="font-14">Terms of use</span>
+                        <span class="font-14">Privacy Policy</span>
+                        <span class="font-14">Copyright Mediclinic Limited</span>
+                    </div>
+                    <div class="privacy-img">
+                        <img src="./asset/images/privacy-1.png" alt="privacy-1">
+                        <img src="./asset/images/privacy-2.png" alt="privacy-2">
+                        <img src="./asset/images/privacy-3.png" alt="privacy-3">
+                    </div>
+                </div>
             </div>
-            <div class="privacy-img">
-                <img src="./asset/images/privacy-1.png" alt="privacy-1">
-                <img src="./asset/images/privacy-2.png" alt="privacy-2">
-                <img src="./asset/images/privacy-3.png" alt="privacy-3">
-            </div>
-        </div>
-         </div>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+<!-- popup  -->
+
+<div class="modal order-detail-popup" id="order-detailpop" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Order Detail</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <div class="order-zingav">
+            <div class="order-zingav-img">
+                <img src="./asset/images/order-small.png" alt="">
+            </div>
+            <div class="order-singav-content">
+                <h3 class="font-16">Zingavita Vitamin C Amla Extract 1000mg Tablet</h3>
+                <p class="font-15">60 units in this bottle</p>
+            </div>
+         </div>
+         <div class="order-bill-detail">
+            <h3>Order Detail</h3>
+            <div class="order-bill-detail-inner font-16">
+                <span>Order ID :</span>
+                <span>#78941613563</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Order Date :</span>
+                <span>17 May, 2023</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Order Time :</span>
+                <span>10:50 AM</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Expect Delivery Date :</span>
+                <span>19 May, 2023</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Order Status :</span>
+                <span> <button class="btn delivery-status pending">Pending</button></span>
+            </div>
+         </div>
+         <div class="order-bill-detail">
+            <h3>Bill Detail</h3>
+            <div class="order-bill-detail-inner font-16">
+                <span>Item Total (2x @55)</span>
+                <span>$110</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Discount (Coupon)</span>
+                <span>-$10</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Gross Amount</span>
+                <span>$00</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>GST (18%)</span>
+                <span>$21</span>
+            </div>
+         </div>
+        </div>
+ 
+      </div>
+    </div>
+    </div>
+
+<!-- booking details popup -->
+<div class="modal order-detail-popup medxinplate "   id="booking-detailpop" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Order Detail</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <div class="order-zingav">
+            <div class="order-zingav-img">
+                <img src="./asset/images/booking-popup.png" alt="">
+            </div>
+            <div class="order-singav-content">
+                <h3 class="font-16">Dr. Jyothirmayi Tangirala Riyana</h3>
+                <p class="font-15">General Medicine</p>
+            </div>
+         </div>
+         <div class="order-bill-detail">
+            <h3>Booking Detail</h3>
+            <div class="order-bill-detail-inner font-16">
+                <span>Booking ID :</span>
+                <span>#78941613563</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Booking Date :</span>
+                <span>17 May, 2023</span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Booking Time :</span>
+                <span>10:50 AM</span>
+            </div>
+            
+            <div class="order-bill-detail-inner font-16">
+                <span>Booking Status :</span>
+                <span> <button class="btn delivery-status pending">Pending</button></span>
+            </div>
+            <div class="order-bill-detail-inner font-16">
+                <span>Clinic Address:</span>
+                <span>4/217A Jeeva Tower, Old 
+                    Mahabalipuram Road (OMR), Egattur 
+                    Village, Chennai, 600012</span>
+            </div>
+         </div>
+         <div class="order-buttons">
+            <button class="btn add-to-cart font-16"> Download  Appointment</button>
+            <button class="btn continue-btn font-18"  >Repeat Order</button>
+        </div>
+        </div>
+ 
+      </div>
+    </div>
+    </div>
+
+
 </body>
 
 </html>

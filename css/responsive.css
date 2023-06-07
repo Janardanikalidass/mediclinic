@@ -98,21 +98,12 @@
 .top-wraper .zin-para {min-height: 46px;    margin: 10px 0 10px;}
 .doc-para {min-height: 40px;}
 .doc-head{min-height: unset;}
-.leftsection-filter {
-    z-index: 9999;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 270px;
-    left: -320px;
-}
-.right-section-filter{
-    width: 100%;
-}
+.leftsection-filter {z-index: 9999;overflow-y: auto;position: fixed;top: 0;height: 100%;width: 270px;left: -320px;}
+.right-section-filter{width: 100%;}
 .filter-here,.cross-icon {display: block;}
 .parm-para{    min-height: 101px;}
 .medxinplate .gene-med {margin-top: 20px;}
+.myaccount .tab-content{margin-top: 20px;}
 }
 
 @media screen and (max-width:767px) { 
@@ -121,18 +112,13 @@
 .doc-head,.doc-para {min-height: unset; }
 .top-wraper .zin-para {min-height: 69px;}
 .parm-para{    min-height: 78px;}
-.items-cart-wrapper {
-    flex-direction: column;
-    padding: 15px 15px 15px 15px;
-}
-.cart-quan {
-    width: 100%;
-    margin-bottom: 20px;
-}
-.cart-quan-sec {
-    width: 100%;
-    margin-left: 0;
-}
+.items-cart-wrapper {flex-direction: column;padding: 15px 15px 15px 15px;}
+.cart-quan {width: 100%;margin-bottom: 20px;}
+.cart-quan-sec {width: 100%;margin-left: 0;}
+.order-head {display: flex;justify-content: space-between;align-items: center;padding: 16px 0;}
+.order-head select {width: 190px;height: 50px;margin-bottom: 0;}
+.order-id-details {flex-direction: column;align-items: flex-start;}
+.order-buttons {margin-top: 10px;}
 }
 
 @media screen and (max-width:576px) {
@@ -160,9 +146,13 @@
 @media screen and (max-width:575px) {
     .medxinplate .container{min-width: 390px; width: 390px;}
     .parm-para{ min-height: auto;}
-    .cart-quan {
-        flex-direction: column;
-    }
+    .cart-quan {  flex-direction: column;}
+    .advatar-wrapper {flex-direction: column;align-items: flex-start;}
+    .avatar-btn .btn{margin-top: 10px;}
+    .order-buttons {flex-direction: column;}
+    .order-buttons .continue-btn{margin-left: 0;margin-top: 10px;}
+    .order-head {flex-direction: column;align-items: flex-start;}
+    .order-head select{margin-top: 10px;}
 }
 @media screen and (max-width:500px) {
 .foot-1,.foot-6{width: 100%;}
@@ -186,4 +176,9 @@
 .consult-select,.doc-avail-select,.continue-btn.doc-app-btn{    width: 230px;}
 .infec-dis {flex-direction: column;}
 .infec-dis span:first-child{margin-bottom: 10px;}
+.basic-info-btn {flex-direction: column;}
+.basic-info-btn .continue-btn {margin-top: 10px;}
+.basic-add-information {flex-direction: column;justify-content: flex-start;align-items: flex-start;}
+.advatar-wrapper, .basic-information{padding-bottom: 7px;}
+
 }
