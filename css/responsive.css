@@ -21,7 +21,7 @@
 }
 @media screen and (max-width:1400px) {
 
-.logo {width: 200px;height: 41px;}
+.logo {width: 200px;height: 41px;min-width: 200px;}
 .nav-content ul li{padding: 0px 10px;}
 .cart{margin: 0px 15px;}.search-wrapper{width: calc(100% - 230px);}
 .nav-wrapper{padding-left: 20px;}
@@ -48,7 +48,7 @@
     }
 @media screen and (max-width:1199px) {
 
-.logo {width: 135px;}
+.logo {width: 135px;width: 135px;min-width: 135px;}
 .search-wrapper{width: calc(100% - 165px);}
 .nav-wrapper{padding-left: 10px;}
 .nav-content ul li{padding: 0px 5px;}
