@@ -1527,7 +1527,6 @@ p.appoint-address span {
 }
 .btn-group ul {
     padding: 0px 0px 20px 0px;
-    inset: 11px auto auto 0px !important;
 }
 .custom-multi-date{
     background: url("../asset/images/multi-cal.png") no-repeat 94%;
@@ -1535,6 +1534,7 @@ p.appoint-address span {
 }
 .user-details {
     background: #4FB861;
+    border-radius: 5px;
 }
 .user-text p {
     color: #FFF;
@@ -1604,4 +1604,26 @@ section.popular-doctor.Suggest-Doctors {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.profile-btn {
+    position: relative;
+    padding: 0px !important;
+}
+
+.profile-btn::after {
+    display: none !important;
+}
+
+.max-1399 {
+    display: none;
+}
+.user-text p:last-child {
+    margin-top: 5px;
+}
+header .dropdown-menu li a:hover {
+    background: unset;
+}
+header .dropdown-menu {
+    padding-bottom: 0;
+    top: 10px !important;
 }

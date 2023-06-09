@@ -7,6 +7,7 @@
 }
 @media screen and (max-width:1799px) {
 .top-wraper .zin-para {min-height: 87px;}
+.nav-content ul li {padding: 0px 10px;}
 }
 @media screen and (max-width:1600px) {
 .right-section-filter .top-wraper {
@@ -39,6 +40,26 @@
 @media screen and (max-width:1399px) {
 .doc-para {
     min-height: 60px;
+}
+.login.max-1399 {
+    display: flex;
+}
+.login {
+    display: none;
+}
+.nav-wrapper {
+    width: 100%;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: end;
+    margin: 15px 0px 0px 0px;
+}
+.header {
+    flex-wrap: wrap;
+}
+.search-wrapper {
+    width: calc(100% - 500px) !important;
+    margin-left: 0px;
 }
 }
 @media screen and (max-width:1200px) {
@@ -79,9 +100,9 @@
 
 @media screen and (max-width:991px) {
 
-.nav-wrapper {flex-direction: column;overflow-y: auto;background: #4FB861;position: fixed;top: 0;width: 250px;height: 100vh;left: -250px;z-index: 9999;transition-duration: 0.5s;}
+.nav-wrapper {margin:0px; flex-direction: column;overflow-y: auto;background: #4FB861;position: fixed;top: 0;width: 260px;height: 100vh;left: -260px;z-index: 9999;transition-duration: 0.5s;}
 .left-wrapper{width: 100%;}
-.ham-menu {display: block;float: left;margin-left: 20px;width: 22px;position: relative;}
+.ham-menu {display: block;float: left;margin-left: auto;width: 22px;position: relative;}
 .nav-content ul {flex-direction: column;}
 .nav-content ul li {padding: 10px 0 10px;}
 .cart {margin: 20px 0 30px;}
@@ -104,6 +125,12 @@
 .parm-para{    min-height: 101px;}
 .medxinplate .gene-med {margin-top: 20px;}
 .myaccount .tab-content{margin-top: 20px;}
+.login.max-1399 {display:none;}
+.search-wrapper{width: calc(100% - 260px) !important;}
+.login{display: flex;}
+.user-profile {display: flex;padding: 10px;flex-direction: column;align-items: center;}
+.nav-wrapper.open{padding: 10px;}
+.logo {margin-right: 10px;}
 }
 
 @media screen and (max-width:767px) { 
@@ -124,7 +151,7 @@
 @media screen and (max-width:576px) {
 
 .left-wrapper { flex-wrap: wrap;justify-content: space-between; }  
-.search-wrapper { order: 3;width: 100%; margin: 10px 0 0 0; }
+.search-wrapper { order: 3;width: 100% !important; margin: 10px 0 0 0; }
 .top-wraper {width: 100%;}
 .top-wraper .zin-para {min-height: 60px;}
 .top-wraper:nth-child(n) {margin-right: 0;}
